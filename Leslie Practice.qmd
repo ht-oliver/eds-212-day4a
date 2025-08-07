@@ -3,5 +3,15 @@ title: "Leslie Matrix Practice"
 author: "Henry Oliver"
 format: html
 ---
+```{r}
+# Made a sequence of values from 1 to 10
+my_vals <- seq(from = 1, to = 10, by = 1)
+
+# Look at it (always)
+my_vals
+
+# Convert to matrix 
+my_matrix <- matrix(data )
+```
 
 
