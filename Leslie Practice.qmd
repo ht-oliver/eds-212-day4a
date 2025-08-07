@@ -11,7 +11,24 @@ my_vals <- seq(from = 1, to = 10, by = 1)
 my_vals
 
 # Convert to matrix 
-my_matrix <- matrix(data )
-```
+my_matrix <- matrix(data = my_vals, 
+                    nrow = 2, 
+                    ncol = 5, 
+                    byrow = TRUE)
 
+# Check it out
+my_matrix
+
+```
+```{r}
+4*my_matrix
+
+#New values, some steps are skipped because of default stuff
+my_vals_2 = seq(from = 21, to = 30)
+my_matrix_2 = matrix(my_vals_2, nrow = 2, byrow = TRUE)
+my_matrix_2
+
+my_matrix+my_matrix_2
+
+```
 
