@@ -75,3 +75,35 @@ insect_y2 <- insect_leslie %*% insect_y1
 # Check it out
 insect_y2
 ```
+
+
+# Another Leslie Matrix
+```{r}
+tree_leslie <- matrix(c(0, 0, 5000, 0.10, 0, 0, 0, 0.06, 0.95),
+                      nrow = 3,
+                      ncol = 3,
+                      byrow = TRUE)
+
+tree_leslie
+
+# year 0: initial condition
+tree_0 <- c(5000, 0, 0)
+
+# year 1 ---
+tree_1 <- tree_leslie %*% tree_0
+tree_1
+
+# year 2
+tree_2 <- tree_leslie %*% tree_1
+tree_2
+
+# year 3
+tree_3 <- tree_leslie %*% tree_2
+tree_3
+
+# year 4
+tree_4 <- tree_leslie %*% tree_3
+tree_4
+
+
+```
